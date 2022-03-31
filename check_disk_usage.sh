@@ -1,4 +1,9 @@
 #!/bin/bash
 dir="$1"
-echo -e "Checking dik usage in $dir\n"
+if [-d $dir ]; then 
+    echo -e "Checking dik usage in $dir\n"
+else echo -e "$dir directory does not exit, exiting"
+    exit 101
+fi
+
  
